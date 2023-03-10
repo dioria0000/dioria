@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="about.css">
+    <title>FC.DIORIA</title>
+</head>
+<body>
+    <header id="header" class="wrapper">
+        <div class="header-logo">
+            <img src="DIORIA.JPG" alt="FC DIORIA">
+        </div>
+        <!-- ハンバーガーメニュー -->
+        <span class="nav_toggle">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="player.html">PLAYER</a></li>
+                <li><a href="sponser.html">SPONSER</a></li>
+            </ul>  
+        </div>
+        <!--  ハンバーガーメニュー -->
+
+        <nav>
+            <ul>
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="player.html">PLAYER</a></li>
+                <li><a href="#sponser">SPONSER</a></li>
+            </ul>
+        </nav> 
+    </header>
+    
+    <main>
+        <section id="about" class="wrapper">
+            <h1 class="section-title">About</h1>
+            <div class="club-content">
+                <div class="club-overview">
+                    <h2 class="club-title">クラブ概要</h2>
+                    <p>
+                        2019年 発足
+                        2020年 ソサイチ関東3部リーグ2位
+                        2021年 ソサイチ関東2部リーグ4位
+                        2022年 ソサイチ関東2部リーグ3位
+                        2023年 ソサイチ関東1部リーグ所属
+                    </p>
+                </div>
+
+
+                <div class="club-teamname">
+                    <h2 class="club-title">チーム名</h2>
+                    <p>
+                        DIORIAは、スペイン語で勝利の女神「Diosa de la victoria」、家族「familia」に由来します。
+                        家族のように団結し、勝利にこだわる姿勢を現したものです。
+                    </p>
+                </div>
+
+                <div class="club-emblem">
+                    <h2 class="club-title">エンブレム</h2>
+                    <img src="DIORIA.JPG" alt="FC DIORIA">
+                    <p>サモトラケのニケ「勝利の女神」の象徴である羽をイメージしています。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="daihyo">
+            <div class="club-daihyo">
+                <h3>代表挨拶</h3>
+                <div class="club-text">
+                    <img src="kazuho.JPG" alt="kazuho">
+                    <p>
+                        多くのスポンサー様、サポーター様に支えられ、クラブを運営できていることを感謝いたします。
+                        ・生涯スポーツとして、フットボールを続けられる環境を作ること。
+                        ・クラブが一つのコミュニティとして、関係者の拠り所であること。
+                        ・全員がフラットな関係で、主張し合える環境を作ること。
+                        この3つが私がこのクラブを立ち上げた際に掲げた目標です。
+
+                        ただフットボールをするだけでなく、その中で一人ひとりが考え、自分の価値を見出し、それぞれの人生に活かす。
+                        それがこの目標を達成し、クラブを持続可能なものにすると考えています。
+
+                        今シーズンは、スローガンの「ONE TEAM」の通り、一致団結し関東1部リーグ優勝、日本一を目指します。
+
+                        引き続き、応援の程よろしくお願いいたします。
+                        FC.DIORIA 代表 伊能一穂
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer" class="wrapper">
+        <div class="footer-content">
+            <img src="DIORIA.JPG" alt="FC DIORIA">
+        </div>
+
+
+        <div class="footer-category">
+            <h2 class="footer-title">Category</h2>
+            <ul>
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="player.html">PLAYER</a></li>
+                <li><a href="sponser.html">SPONSER</a></li>
+            </ul>
+        </div>
+        <div class="sns">
+            <h3 class="sns-link">SNS</h3>
+            <a href="https://www.instagram.com/fc.dioria/" class="fa-brands fa-instagram"></a>
+            <a href="https://twitter.com/TwitterJP" class="fa-brands fa-twitter"></a>
+        </div>
+    </footer>
+        <div class="footer-footer">
+            <p>&copy;2023 FC DIORIA </p>
+        </div>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="dioria.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script>
+            $(".nav_toggle").on("click", function () { /*クリックしたらjQuery発動*/
+              $(".nav_toggle, .nav").toggleClass("show");
+            });
+        </script>
+</body>
+</html>
