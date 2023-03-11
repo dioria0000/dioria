@@ -410,9 +410,7 @@ a {
        margin-left: -20%;
       }
 
-      #daihyo {
-        background-color:red;
-      }
+     
 
       #daihyo h3 {
         margin-right: 40px;
@@ -452,12 +450,12 @@ a {
        margin-left: -10%;
       }
 
-      #daihyo h3 {
-        margin-right: 30px;
+      #daihyo {
+        background-color: red;
       }
 
-      #daihyo {
-        background-image: url(team1.JPG);
+      #daihyo h3 {
+        margin-right: 30px;
       }
 
       #daihyo img {
