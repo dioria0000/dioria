@@ -418,7 +418,6 @@ a {
         background-color: #0f1419;
       }
      
-
       #daihyo h3 {
         margin-right: 40px;
       }
@@ -458,10 +457,7 @@ a {
       }
 
       #daihyo {
-        background-image: url(team1.JPG);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-color: #0f1419;
       }
 
       #daihyo h3 {
