@@ -467,5 +467,9 @@ a {
       .footer-title {
         padding-bottom: 7px;
     }
+    
+    .sns a {
+        font-size: 20px;
+    }
 
 }
