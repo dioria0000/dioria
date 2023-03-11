@@ -358,6 +358,26 @@ display: none;
    margin-left: -20%;
   }
 
+  #suponser .content-suponser .img {
+    width: 100%;
+  }
+
+  #suponser .content-suponser .img {
+    width: 100%;
+  }
+
+  #suponser .content-suponser .img1 {
+    width: 60%;
+  }
+
+  #suponser .content-suponser .img2 {
+    width: 60%;
+  }
+
+  #suponser .content-suponser .img3 {
+    width: 60%;
+  }
+
   .footer-title {
     padding-bottom: 7px;
 }
@@ -376,8 +396,28 @@ display: none;
    margin-left: -20%;
   }
 
+  #suponser .content-suponser .img {
+    width: 100%;
+  }
+
+  #suponser .content-suponser .img1 {
+    width: 60%;
+  }
+
+  #suponser .content-suponser .img2 {
+    width: 60%;
+  }
+
+  #suponser .content-suponser .img3 {
+    width: 60%;
+  }
+
   .footer-title {
     padding-bottom: 7px;
+}
+
+.sns a {
+  font-size: 20px;
 }
   
 }
