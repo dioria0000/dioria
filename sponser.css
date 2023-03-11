@@ -130,23 +130,34 @@ a {
 
 
 /*----------suponser--------*/
-#suponser .content {
-  margin-bottom: 80px;
-  margin-top: 150px;
+#suponser {
+  margin-bottom: 100px;
 }
 #suponser .content-suponser {
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin-top: 100px;
+  gap: 150px;
 }
 
-#suponser .content .img {
-  margin-right: 80px;
+#suponser img {
+  margin: 40px;
 }
 
+#suponser .img {
+  width: 150px;
+}
 
-.content-suponser img {
-  width: 300px;
+#suponser .img1 {
+  width: 80px;
+}
+
+#suponser .img2 {
+  width: 100px;
+}
+
+#suponser .img3 {
+  width: 80px;
 }
 
  /*----------footer---------*/
@@ -363,12 +374,6 @@ display: none;
 
   .nav_toggle {
    margin-left: -20%;
-  }
-
-  .img {
-    text-align: right;
-    height: auto;
-    width: auto;
   }
 
   .footer-title {
