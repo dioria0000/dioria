@@ -421,7 +421,8 @@ a {
     }
 
     .content h3 {
-        font-size: 12px;
+        font-size: 15px;
+        line-height: 2;
     }
     
     .content p {
@@ -501,7 +502,8 @@ a {
     }
 
     .content h3 {
-        font-size: 6px;
+        font-size: 15px;
+        line-height: 2;
     }
     
     .content p {
@@ -511,11 +513,11 @@ a {
     /*-----GK-----*/
     #gk {
     padding: 10px;
-  }
+   }
 
     /*-----DF-----*/
-        #df {
-        padding: 10px;
+    #df {
+    padding: 10px;
     }
 
     /*-----MF-----*/
