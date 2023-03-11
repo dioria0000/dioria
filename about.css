@@ -161,6 +161,7 @@ a {
     position: relative;
 }
 
+
 #daihyo h3 {
     font-size: 40px;
     color: #fff;
@@ -399,7 +400,6 @@ a {
     opacity: 1;
     visibility: visible;
   }
-   
 }
 
 @media screen and (max-width: 499px) {
@@ -412,6 +412,10 @@ a {
    
       .nav_toggle {
        margin-left: -20%;
+      }
+
+      #daihyo {
+        background-image: url(team1.JPG);
       }
 
       #daihyo h3 {
@@ -434,10 +438,10 @@ a {
       .footer-title {
         padding-bottom: 7px;
     }
-    
+
     .sns a {
-  font-size: 20px;
-}
+        font-size: 20px;
+      }
 }
 
 @media screen and (max-width: 399px) {
@@ -456,6 +460,10 @@ a {
         margin-right: 30px;
       }
 
+      #daihyo {
+        background-size: cover;
+      }
+
       #daihyo img {
         margin-top: 40%; /*上の文字との距離*/
         margin-left: 30%;/*横の文字の位置*/
@@ -472,9 +480,9 @@ a {
       .footer-title {
         padding-bottom: 7px;
     }
-    
+
     .sns a {
         font-size: 20px;
-    }
+      }
 
 }
