@@ -153,7 +153,11 @@ a {
 #daihyo {
     height: 830px;
     margin-bottom: 100px;
-    background-color: black;
+    background-image: url(team4.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     position: relative;
 }
 
@@ -410,6 +414,9 @@ a {
        margin-left: -20%;
       }
 
+      #daihyo {
+        background-color: #0f1419;
+      }
      
 
       #daihyo h3 {
@@ -451,12 +458,16 @@ a {
       }
 
       #daihyo {
-        background-color: red;
+        background-image: url(team1.JPG);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
       }
 
       #daihyo h3 {
         margin-right: 30px;
       }
+
 
       #daihyo img {
         margin-top: 40%; /*上の文字との距離*/
