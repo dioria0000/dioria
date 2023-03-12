@@ -415,7 +415,10 @@ a {
       }
 
       #daihyo {
-       background-color: #0f1419;
+        background-image: url(team5.JPG);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
       }
      
       #daihyo h3 {
@@ -455,10 +458,13 @@ a {
       .nav_toggle {
        margin-left: -10%;
       }
-      
+
       #daihyo {
-        background-color: #0f1419;
-       }
+        background-image: url(team5.JPG);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
 
       #daihyo h3 {
         margin-right: 30px;
