@@ -482,7 +482,6 @@ a {
    
       .text {
        font-size: 25px;
-       top: 90%;
        right: 25%;
       }
    
@@ -553,6 +552,7 @@ a {
 
    .text {
     font-size: 25px;
+       right: 25%;
    }
 
    #news .content {
