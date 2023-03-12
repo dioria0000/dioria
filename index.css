@@ -279,7 +279,12 @@ a {
     margin-bottom: 30px;
 }
 #footer .sns {
-    font-size: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#footer .sns a:hover {
+    opacity: 0.6;
 }
 
 #footer .sns-link {
@@ -526,10 +531,10 @@ a {
        .footer-title {
         padding-bottom: 7px;
     }
-    
+
     .sns a {
-  font-size: 20px;
-}
+        font-size: 20px;
+      }
       
 }
 
@@ -596,10 +601,11 @@ a {
 
    .footer-title {
     padding-bottom: 7px;
-}
-    
-    .sns a {
-  font-size: 20px;
-}
-  
+  }
+
+  .sns a {
+    font-size: 20px;
+  }
+
+
 }
