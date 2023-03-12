@@ -415,10 +415,8 @@ a {
       }
 
       #daihyo {
-        background-image: url(team5.JPG);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
+        background-image: none;
+        background-color: #0f1419;
       }
      
       #daihyo h3 {
@@ -460,10 +458,8 @@ a {
       }
 
       #daihyo {
-        background-image: url(team5.JPG);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
+        background-image: none;
+        background-color: #0f1419;
       }
 
       #daihyo h3 {
