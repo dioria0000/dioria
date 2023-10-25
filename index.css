@@ -75,6 +75,7 @@ html{
 #header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     position: relative; /*基準値を指定*/
     height: 150px;
 }
@@ -91,14 +92,11 @@ html{
 
 nav ul {
     display: flex;
-    position: absolute; /*ナビゲーションの位置を配置*/
-    top: 65%;
-    right: 4%;
 }
 
 nav ul li {
     font-size: 19px;
-    margin-right: 30px;
+    margin-right: 50px;
 }
 
 a {
