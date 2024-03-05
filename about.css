@@ -107,8 +107,8 @@ a {
     display: inline-block;
     text-decoration: none;
     color: #0f1419
-  }
-  #header a::after {
+}
+#header a::after {
     position: absolute;
     bottom: -8px;
     left: 0;
@@ -119,12 +119,123 @@ a {
     opacity: 0;
     visibility: hidden; /*下線の非表示*/
     transition: .5s; /*下線が出てくるスピード*/
-  }
-  #header a:hover::after {
+}
+#header a:hover::after {
     bottom: -4px;
     opacity: 1;
     visibility: visible; /*要素の表示非表示を設定する(下線)*/
-  }
+}
+ /*--モーダルウインドウ--*/
+ .layer {
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s linear, visibility 0.4s linear, z-index 1s linear;
+}
+  
+  
+.layer.is-open {
+    z-index: 999;
+    opacity: 1;
+    visibility: visible;
+}
+  
+.layer.is-open .modal{
+    opacity: 1;
+    visibility: visible;
+}
+  
+.modal__button-wrap {
+    position: absolute;
+    right: 10px;
+    top: -28px;
+    display: inline-flex;
+}
+  
+.close-button {
+    position: relative;
+    width: 39px;
+    height: 39px;
+    background: orange;
+    border-radius: 50%;
+    padding: 0;
+    border: transparent;
+    cursor: pointer;
+}
+  
+.close-button span {
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    left: calc(50% - 12px);
+    top: 50%;
+    border-radius: 20px;
+}
+  
+.close-button span:nth-child(1) {
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+  
+.close-button span:nth-child(2) {
+    transform: rotate(-45deg) translate(1px, -1px);
+}
+  
+.modal {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    min-width: 440px;
+    opacity: 0;
+    visibility: hidden;
+    transition:  visibility .7s linear, opacity .7s linear;
+}
+  
+  
+.modal__inner {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+    display: block;
+    padding: 21px 8px 21px;
+    height: auto;
+    width: 40%;
+}
+  
+.modal__content {
+    padding-top: 15px;
+    padding-bottom: 23px;
+}
+.modal__content li {
+    text-align: center;
+    margin-top: 30px;
+}
+  
+  
+.modal__button-area {
+    max-width: 843px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 17px;
+    padding-top: 15px;
+}
+  
+.button {
+      cursor: pointer;
+}
 
 /*----------About---------*/
 #about {
@@ -153,7 +264,7 @@ a {
 #daihyo {
     height: 830px;
     margin-bottom: 100px;
-    background-image: url(team4.JPG);
+    background-image: url(image/team4.JPG);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
