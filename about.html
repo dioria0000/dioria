@@ -11,7 +11,7 @@
 <body>
     <header id="header" class="wrapper">
         <div class="header-logo">
-            <img src="DIORIA.JPG" alt="FC DIORIA">
+            <img src="image/DIORIA.JPG" alt="FC DIORIA">
         </div>
         <!-- ハンバーガーメニュー -->
         <span class="nav_toggle">
@@ -24,6 +24,7 @@
                 <li><a href="index.html">TOP</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="player.html">PLAYER</a></li>
+                <li><a class="button js-modal-button">SEASON</a></li>
                 <li><a href="sponser.html">Clubpartner</a></li>
             </ul>  
         </div>
@@ -34,9 +35,29 @@
                 <li><a href="index.html">TOP</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="player.html">PLAYER</a></li>
-                <li><a href="#sponser">Clubpartner</a></li>
+                <li><a class="button js-modal-button">SEASON</a></li>
+                <li><a href="sponser.html">Clubpartner</a></li>
             </ul>
-        </nav> 
+        </nav>
+        <!-- モーダルウインドウ -->
+        <div class="layer js-modal">
+            <div class="modal">
+              <div class="modal__inner">
+                <div class="modal__button-wrap">
+                  <button class="close-button js-close-button">
+                    <span></span>
+                    <span></span>
+                  </button>
+                </div>
+                <div class="modal__contents">
+                  <div class="modal__content">
+                    <li><a href="seson_2023.html">2023シーズン</a></li>
+                    <li><a href="seson_2024.html">2024シーズン</a></li>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
     </header>
     
     <main>
@@ -50,7 +71,8 @@
                         2020年 ソサイチ関東3部リーグ2位
                         2021年 ソサイチ関東2部リーグ4位
                         2022年 ソサイチ関東2部リーグ3位
-                        2023年 ソサイチ関東1部リーグ所属
+                        2023年 ソサイチ関東1部リーグ6位
+                        2024年 ソサイチ関東1部リーグ所属
                     </p>
                 </div>
 
@@ -65,7 +87,7 @@
 
                 <div class="club-emblem">
                     <h2 class="club-title">エンブレム</h2>
-                    <img src="DIORIA.JPG" alt="FC DIORIA">
+                    <img src="image/DIORIA.JPG" alt="FC DIORIA">
                     <p>サモトラケのニケ「勝利の女神」の象徴である羽をイメージしています。</p>
                 </div>
             </div>
@@ -75,7 +97,7 @@
             <div class="club-daihyo">
                 <h3>代表挨拶</h3>
                 <div class="club-text">
-                    <img src="kazuho.JPG" alt="kazuho">
+                    <img src="image/kazuho.JPG" alt="kazuho">
                     <p>
                         多くのスポンサー様、サポーター様に支えられ、クラブを運営できていることを感謝いたします。
                         ・生涯スポーツとして、フットボールを続けられる環境を作ること。
@@ -86,8 +108,6 @@
                         ただフットボールをするだけでなく、その中で一人ひとりが考え、自分の価値を見出し、それぞれの人生に活かす。
                         それがこの目標を達成し、クラブを持続可能なものにすると考えています。
 
-                        今シーズンは、スローガンの「ONE TEAM」の通り、一致団結し関東1部リーグ優勝、日本一を目指します。
-
                         引き続き、応援の程よろしくお願いいたします。
                         FC.DIORIA 代表 伊能一穂
                     </p>
@@ -97,7 +117,7 @@
     </main>
     <footer id="footer" class="wrapper">
         <div class="footer-content">
-            <img src="DIORIA.JPG" alt="FC DIORIA">
+            <img src="image/DIORIA.JPG" alt="FC DIORIA">
         </div>
 
 
@@ -119,13 +139,13 @@
             <p>&copy;2023 FC DIORIA </p>
         </div>
 
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="dioria.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>   
         <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
         <script>
             $(".nav_toggle").on("click", function () { /*クリックしたらjQuery発動*/
               $(".nav_toggle, .nav").toggleClass("show");
             });
         </script>
+        <script src="dioria.js"></script>
 </body>
 </html>
