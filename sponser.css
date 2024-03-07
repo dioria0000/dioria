@@ -327,29 +327,32 @@ display: none;
 }
 
 @media screen and (max-width: 767px) {
-    nav { /*ナビゲーション非表示*/
-      display: none;
+  nav { /*ナビゲーション非表示*/
+    display: none;
   }
 
   nav ul li {
-      font-size: 15px;
+    font-size: 15px;
+  }
+  .wrapper {
+    padding: 0 8%;
   }
 
- #header .header-logo {
-  padding-left: 50px;
- }
+  #header .header-logo {
+    padding-left: 50px;
+  }
 
   #header ul {
-      padding-right: 50px;
+    padding-right: 50px;
   }
 
   #header ul li {
-      font-size: 20px;
-      padding-top: 80px;
+    font-size: 20px;
+    padding-top: 80px;
   }
 
   #header a::after {
-      background: #fff;
+    background: #fff;
   }
 
   .content-suponser {
@@ -388,8 +391,6 @@ display: none;
     width: 60%;
   }
 
-  
-
   #footer {
     flex-direction: column;
     margin-top: 250px;
@@ -405,53 +406,57 @@ display: none;
   }
 
 
-    /*ハンバーガーメニュー*/
-      /* ハンバーガーのマーク */
-      .nav_toggle {
-        display: block;
-        position: relative;
-        width: 1.75rem;
-        height: 1.5rem;
-        margin-left: 60%;
-        z-index: 2;
-      }
-      .nav_toggle i {
-        display: block;
-        width: 100%; /*線の長さ*/
-        height: 2px; /*線の太さ*/
-        background-color: black;
-        position: absolute;
-        transition: transform 0.5s, opacity 0.5s; /*クッリクした時の三本線の変化する時間*/
-      }
+  /*ハンバーガーメニュー*/
+  /* ハンバーガーのマーク */
+  .nav_toggle {
+    display: block;
+    position: relative;
+    width: 1.75rem;
+    height: 1.5rem;
+    margin-left: 60%;
+    z-index: 2;
+  }
+  .nav_toggle i {
+    display: block;
+    width: 100%; /*線の長さ*/
+    height: 2px; /*線の太さ*/
+    background-color: black;
+    position: absolute;
+    transition: transform 0.5s, opacity 0.5s; /*クッリクした時の三本線の変化する時間*/
+  }
 
-      .nav_toggle i:nth-child(1) {
-        top: 0;
-      }
-      .nav_toggle i:nth-child(2) {
-        top: 0;
-        bottom: 0;
-        margin: auto;
-      }
-      .nav_toggle i:nth-child(3) {
-        bottom: 0;
-      }
+  .nav_toggle i:nth-child(1) {
+    top: 0;
+  }
 
-      /* クリックされた後のハンバーガーのマーク */
-      .nav_toggle.show i:nth-child(1) {
-        transform: translateY(10px) rotate(-45deg);
-        background-color: #fff;
-      }
-    .nav_toggle.show i:nth-child(2) {
-        background-color: #fff;
-        opacity: 0;
-    }
-    .nav_toggle.show i:nth-child(3) {
-        transform: translateY(-12px) rotate(45deg);
-        background-color: #fff;
-    }
+  .nav_toggle i:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
 
-    /* クリックで表示されるメニュー：クリックされる前 */
-    .nav {
+  .nav_toggle i:nth-child(3) {
+    bottom: 0;
+  }
+
+  /* クリックされた後のハンバーガーのマーク */
+  .nav_toggle.show i:nth-child(1) {
+    transform: translateY(10px) rotate(-45deg);
+    background-color: #fff;
+  }
+
+  .nav_toggle.show i:nth-child(2) {
+    background-color: #fff;
+    opacity: 0;
+  }
+
+  .nav_toggle.show i:nth-child(3) {
+    transform: translateY(-12px) rotate(45deg);
+    background-color: #fff;
+  }
+
+  /* クリックで表示されるメニュー：クリックされる前 */
+  .nav {
     display: flex;
     position: fixed;
     flex-direction: column;
@@ -481,25 +486,25 @@ display: none;
     visibility: visible;
   }
 
-.buttons {
-  cursor: pointer;
-}
+  .buttons {
+    cursor: pointer;
+  }
 
-.modal {
-  width: 200px;
-}
+  .modal {
+    width: 200px;
+  }
 }
 
 @media screen and (max-width: 499px){
   body {
-    overflow-x: hidden;
-}
-.header-logo {
-    width: 100%;
+      overflow-x: hidden;
+  }
+  .header-logo {
+      width: 100%;
   }
 
   .nav_toggle {
-   margin-left: -20%;
+      margin-left: -20%;
   }
 
   .content-suponser {
@@ -539,18 +544,18 @@ display: none;
   }
   .footer-title {
     padding-bottom: 7px;
-}
+  }
 
-.sns a {
-  font-size: 20px;
-}
-.buttons {
-  cursor: pointer;
-}
+  .sns a {
+    font-size: 20px;
+  }
+  .buttons {
+    cursor: pointer;
+  }
 
-.modal {
-  width: 200px;
-}
+  .modal {
+    width: 200px;
+  }
 
 }
 
@@ -563,8 +568,8 @@ display: none;
   }
 
   .nav_toggle {
-   margin-left: -10%;
-  }
+    margin-left: -15%;
+   }
 
   .content-suponser {
     flex-direction: column;
