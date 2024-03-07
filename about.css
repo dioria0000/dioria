@@ -125,8 +125,8 @@ a {
     opacity: 1;
     visibility: visible; /*要素の表示非表示を設定する(下線)*/
 }
- /*--モーダルウインドウ--*/
- .layer {
+/*--モーダルウインドウ--*/
+.layer {
     background: rgba(0, 0, 0, .5);
     width: 100%;
     height: 100%;
@@ -154,7 +154,7 @@ a {
 .modal__button-wrap {
     position: absolute;
     right: 10px;
-    top: -28px;
+    top: 10px;
     display: inline-flex;
 }
   
@@ -162,7 +162,7 @@ a {
     position: relative;
     width: 39px;
     height: 39px;
-    background: orange;
+    background-color: #fff;
     border-radius: 50%;
     padding: 0;
     border: transparent;
@@ -172,7 +172,7 @@ a {
 .close-button span {
     width: 25px;
     height: 2px;
-    background: #fff;
+    background: black;
     display: inline-block;
     position: absolute;
     left: calc(50% - 12px);
@@ -515,6 +515,14 @@ a {
     opacity: 1;
     visibility: visible;
   }
+
+  .buttons {
+    cursor: pointer;
+  }
+  
+  .modal {
+    width: 200px;
+  }
 }
 
 @media screen and (max-width: 499px) {
@@ -558,48 +566,64 @@ a {
     .sns a {
         font-size: 20px;
       }
+
+      .buttons {
+        cursor: pointer;
+      }
+      
+      .modal {
+        width: 200px;
+      }
 }
 
 @media screen and (max-width: 399px) {
-    body {
-        overflow-x: hidden;
-    }
-    .header-logo {
-        width: 100%;
+body {
+    overflow-x: hidden;
+}
+.header-logo {
+    width: 100%;
         
-      }
-      .nav_toggle {
-       margin-left: -10%;
-      }
+}
+.nav_toggle {
+    margin-left: -10%;
+}
 
-      #daihyo {
-        background-image: none;
-        background-color: #0f1419;
-      }
+#daihyo {
+    background-image: none;
+    background-color: #0f1419;
+}
 
-      #daihyo h3 {
-        margin-right: 30px;
-      }
+#daihyo h3 {
+    margin-right: 30px;
+}
 
-      #daihyo img {
-        margin-top: 40%; /*上の文字との距離*/
-        margin-left: 30%;/*横の文字の位置*/
-      }
+#daihyo img {
+    margin-top: 40%; /*上の文字との距離*/
+    margin-left: 30%;/*横の文字の位置*/
+}
 
-      .club-text {
-        left: 45%;
-      }
+.club-text {
+    left: 45%;
+}
 
-      .club-text p {
-        font-size: 13px;
-      }
+.club-text p {
+    font-size: 13px;
+}
       
-      .footer-title {
-        padding-bottom: 7px;
-    }
+.footer-title {
+    padding-bottom: 7px;
+}
 
-    .sns a {
-        font-size: 20px;
-      }
+.sns a {
+    font-size: 20px;
+}
+
+.buttons {
+    cursor: pointer;
+}
+      
+.modal {
+    width: 200px;
+}
 
 }
