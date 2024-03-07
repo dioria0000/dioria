@@ -62,12 +62,13 @@ html{
       background: #fff;
     }
 
-    .footer-footer {
-        text-align: center;
-        font-size: 10px;
-        padding: 50px;
-      }
+.footer-footer {
+    text-align: center;
+    font-size: 10px;
+    padding: 50px;
+}
 
+/* ポディション別 */
 #nav-top {  
     border: 1px solid #0f1419;
     border-radius: 10px;
@@ -96,15 +97,14 @@ html{
 #header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     position: relative; /*基準値を指定*/
     height: 150px;
-    margin-bottom: 120px;
 }
 
 #header img {
     width: 100px;
     height: 100px;
-    margin-top: 40px;
 }
 
 #header .header-title {
@@ -114,14 +114,11 @@ html{
 
 nav ul {
     display: flex;
-    position: absolute; /*ナビゲーションの位置を配置*/
-    top: 65%;
-    right: 4%;
 }
 
 nav ul li {
     font-size: 19px;
-    margin-right: 30px;
+    margin-right: 50px;
 }
 
 a {
@@ -129,8 +126,8 @@ a {
     display: inline-block;
     text-decoration: none;
     color: #0f1419
-  }
-  #header a::after {
+}
+#header a::after {
     position: absolute;
     bottom: -8px;
     left: 0;
@@ -141,12 +138,13 @@ a {
     opacity: 0;
     visibility: hidden; /*下線の非表示*/
     transition: .5s; /*下線が出てくるスピード*/
-  }
-  #header a:hover::after {
+}
+#header a:hover::after {
     bottom: -4px;
     opacity: 1;
     visibility: visible; /*要素の表示非表示を設定する(下線)*/
-  }
+}
+
 /*----------player---------*/
 #player {
     background-color: #0f1419;
