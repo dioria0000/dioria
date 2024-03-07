@@ -70,32 +70,6 @@ html{
     font-size: 10px;
     padding: 50px;
 }
-
-/*  ロード時のCSS  */
-.start {
-	background: #FFF;
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	z-index: 9000;
-}
-.start p {
-	position: fixed;
-	left: 50%;
-	top: 50%;
-    font-size: 100px;
-    font-family: 'Amatic SC', cursive;
-	transform: translate(-50%, -50%);
-	display: none;
-	z-index: 9999;
-	width: 400px;
-}
-
-.start p span {
-    display: none;
-}
 /*----------header---------*/
 #header {
     display: flex;
@@ -148,7 +122,7 @@ a {
     visibility: visible; /*要素の表示非表示を設定する(下線)*/
 }
 
-  /*--モーダルウインドウ--*/
+/*--モーダルウインドウ--*/
 .layer {
     background: rgba(0, 0, 0, .5);
     width: 100%;
@@ -177,7 +151,7 @@ a {
 .modal__button-wrap {
     position: absolute;
     right: 10px;
-    top: -28px;
+    top: 10px;
     display: inline-flex;
 }
   
@@ -185,7 +159,7 @@ a {
     position: relative;
     width: 39px;
     height: 39px;
-    background: orange;
+    background-color: #fff;
     border-radius: 50%;
     padding: 0;
     border: transparent;
@@ -195,7 +169,7 @@ a {
 .close-button span {
     width: 25px;
     height: 2px;
-    background: #fff;
+    background: black;
     display: inline-block;
     position: absolute;
     left: calc(50% - 12px);
@@ -471,9 +445,9 @@ a {
         background: #fff;
     }
     .text {
-        font-size: 40px;
+        font-size: 25px;
         padding: 20px 0;
-        top: 80%;
+        top: 90%;
         right: 40%;
     }
 
@@ -523,6 +497,14 @@ a {
         text-align: center;
     }
 
+    .buttons {
+        cursor: pointer;
+    }
+
+    .modal {
+        width: 200px;
+    }
+
     /*ハンバーガーメニュー*/
     /* ハンバーガーのマーク */
     .nav_toggle {
@@ -530,7 +512,7 @@ a {
         position: relative;
         width: 1.75rem;
         height: 1.5rem;
-        margin-left: 60%;
+        margin-right: 13%;
         z-index: 2;
       }
       .nav_toggle i {
@@ -569,21 +551,21 @@ a {
      }
 
      /* クリックで表示されるメニュー：クリックされる前 */
-    .nav {
-     display: flex;
-     position: fixed;
-     flex-direction: column;
-     text-align: center;
-     top: 0;
-     left: 0;
-     right: 0;
-     bottom: 0;
-     opacity: 0;
-     visibility: hidden;
-     transition: opacity 0.5s, visibility 0.5s; /*ナビゲーションがクリックされて表示される速度*/
-     background-color: black; /*ナビゲーションの背景画像*/
-     z-index: 1;
-  }
+.nav {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s; /*ナビゲーションがクリックされて表示される速度*/
+    background-color: black; /*ナビゲーションの背景画像*/
+    z-index: 1;
+}
 
   .nav ul li {
     margin-bottom: -40px;
@@ -599,6 +581,16 @@ a {
     visibility: visible;
   }
 
+  .modal {
+    width: 500px;
+    
+}
+
+.buttons {
+    cursor: pointer;
+}
+
+
 }
 
 /*--------スマホ表示レスポンシブ--------*/
@@ -609,20 +601,20 @@ a {
     }
     .header-logo {
         width: 100%;
-      }
+    }
    
-      .nav_toggle {
-       margin-left: -20%;
-      }
+    .nav_toggle {
+        margin-left: -20%;
+    }
    
-      .text {
+    .text {
        font-size: 25px;
        right: 25%;
-      }
+    }
    
-      #news .content {
+    #news .content {
        height: 600px;
-      }
+    }
    
       #news .news-text p {
        font-size: 10px;
@@ -656,89 +648,103 @@ a {
         padding: 20%;
        }
     
-       #schedule .schedule-list  {
-        padding: 7%;
-        margin-right: 3%;
-        font-size: 15px;
-       }
+#schedule .schedule-list  {
+    padding: 7%;
+    margin-right: 3%;
+    font-size: 15px;
+}
 
-       .footer-title {
-        padding-bottom: 7px;
-    }
+.footer-title {
+    padding-bottom: 7px;
+}
 
-    .sns a {
-        font-size: 20px;
-      }
-      
+.sns a {
+    font-size: 20px;
+}
+.buttons {
+    cursor: pointer;
+}
+
+.modal {
+    width: 500px;
+}
 }
 
 @media screen and (max-width: 399px) {
 
-    body {
-        overflow-x: hidden;
-    }
-   .header-logo {
-     width: 100%;
-   }
+body {
+    overflow-x: hidden;
+}
+.header-logo {
+    width: 100%;
+}
 
-   .nav_toggle {
-    margin-left: -20%;
-   }
+.nav_toggle {
+    margin-left: -10%;
+}
 
-   .text {
+.text {
     font-size: 25px;
     right: 20%;
-   }
+}
 
-   #news .content {
+#news .content {
     height: 600px;
-   }
+}
 
-   #news .news-text p {
+#news .news-text p {
     font-size: 10px;
-   }
+}
    
-   #news .content1 {
+#news .content1 {
     height: 400px;
-   }
+}
 
-   #news .content .news-title {
+#news .content .news-title {
     font-size: 20px;
-   }
+}
 
-   #news .content1 .news-title {
+#news .content1 .news-title {
     font-size: 20px;
-   }
+}
 
-   #news .content1 p {
+#news .content1 p {
     padding-top: 5%;
-   }
+}
 
-   #schedule .schedule-contaniner{
+#schedule .schedule-contaniner{
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
     width: 100%;
     height: auto;
-   }
+}
 
-   .schedule-contnt {
+.schedule-contnt {
     padding: 20%;
-   }
+}
 
-   #schedule .schedule-list  {
+#schedule .schedule-list  {
     padding: 7%;
     margin-right: 3%;
     font-size: 15px;
-   }
+}
 
-   .footer-title {
+.footer-title {
     padding-bottom: 7px;
-  }
+}
 
-  .sns a {
+.sns a {
     font-size: 20px;
-  }
+}
+
+.buttons {
+    cursor: pointer;
+}
+
+.modal {
+    width: 300px;
+}
 
 
 }
