@@ -8,7 +8,8 @@ window.addEventListener('DOMContentLoaded', function() { /*ページ読み込み
 
 //モーダルウインドウ	
 const modal = document.querySelector('.js-modal');
-const modalButton = document.querySelector('.js-modal-button');
+const modalButton = document.querySelector('.js-modal-button'); //PC表示
+const modalButtons = document.querySelector('.js-modal-buttons'); //レスポンシブ
 const modalClose = document.querySelector('.js-close-button');
 modalButton.addEventListener('click', () => {
   modal.classList.add('is-open');
@@ -17,9 +18,17 @@ modalClose.addEventListener('click', () => {
   modal.classList.remove('is-open');
 });
 
+//レスポンシブ時のモーダルウインドウ
+modalButtons.addEventListener('click', () => {
+  modal.classList.add('is-open');
+});
+modalClose.addEventListener('click', () => {
+  modal.classList.remove('is-open');
+});
+
 // ハンバーガメニュー
 $(".nav_toggle").on("click", function () { /*クリックしたらjQuery発動*/
-$(".nav_toggle, .nav").toggleClass("show");
+  $(".nav_toggle, .nav").toggleClass("show");
 });
 
 //フェードイン・フェードアウト
@@ -35,4 +44,5 @@ ScrollReveal().reveal('.news-text1', { delay: 400, origin: "left" });
 ScrollReveal().reveal('.news-text2', { delay: 400, origin: "left" });
 ScrollReveal().reveal('.diego', { delay: 400, origin: "right" });
 ScrollReveal().reveal('.schedule-contaniner', { delay: 400, origin: "top" });
+ScrollReveal().reveal('.text', { delay: 500, origin: "left" });
 ScrollReveal().reveal('#footer', { delay: 400, origin: "top"});
