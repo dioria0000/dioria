@@ -249,8 +249,8 @@ a {
 .footer-title {
     padding-bottom: 7px;
 }
- /*--モーダルウインドウ--*/
- .layer {
+/*--モーダルウインドウ--*/
+.layer {
     background: rgba(0, 0, 0, .5);
     width: 100%;
     height: 100%;
@@ -278,7 +278,7 @@ a {
 .modal__button-wrap {
     position: absolute;
     right: 10px;
-    top: -28px;
+    top: 10px;
     display: inline-flex;
 }
   
@@ -286,7 +286,7 @@ a {
     position: relative;
     width: 39px;
     height: 39px;
-    background: orange;
+    background-color: #fff;
     border-radius: 50%;
     padding: 0;
     border: transparent;
@@ -296,7 +296,7 @@ a {
 .close-button span {
     width: 25px;
     height: 2px;
-    background: #fff;
+    background: black;
     display: inline-block;
     position: absolute;
     left: calc(50% - 12px);
@@ -494,6 +494,13 @@ a {
     opacity: 1;
     visibility: visible;
   }
+  .buttons {
+    cursor: pointer;
+}
+
+.modal {
+    width: 200px;
+}
 }
 
 @media screen and (max-width: 499px){
@@ -574,6 +581,13 @@ a {
     .sns a {
         font-size: 20px;
       }
+      .buttons {
+        cursor: pointer;
+    }
+
+    .modal {
+        width: 200px;
+    }
   
   }
   
@@ -653,5 +667,12 @@ a {
     .sns a {
         font-size: 20px;
       }
+      .buttons {
+        cursor: pointer;
+    }
+
+    .modal {
+        width: 200px;
+    }
   }
   
