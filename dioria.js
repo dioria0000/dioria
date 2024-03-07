@@ -19,7 +19,7 @@ modalClose.addEventListener('click', () => {
 
 // ハンバーガメニュー
 $(".nav_toggle").on("click", function () { /*クリックしたらjQuery発動*/
-$(".nav_toggle, .nav").toggleClass("show");
+  $(".nav_toggle, .nav").toggleClass("show");
 });
 
 //フェードイン・フェードアウト

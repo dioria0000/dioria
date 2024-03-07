@@ -70,32 +70,6 @@ html{
     font-size: 10px;
     padding: 50px;
 }
-
-/*  ロード時のCSS  */
-.start {
-	background: #FFF;
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	z-index: 9000;
-}
-.start p {
-	position: fixed;
-	left: 50%;
-	top: 50%;
-    font-size: 100px;
-    font-family: 'Amatic SC', cursive;
-	transform: translate(-50%, -50%);
-	display: none;
-	z-index: 9999;
-	width: 400px;
-}
-
-.start p span {
-    display: none;
-}
 /*----------header---------*/
 #header {
     display: flex;
@@ -530,7 +504,7 @@ a {
         position: relative;
         width: 1.75rem;
         height: 1.5rem;
-        margin-left: 60%;
+        margin-right: 13%;
         z-index: 2;
       }
       .nav_toggle i {
@@ -569,21 +543,21 @@ a {
      }
 
      /* クリックで表示されるメニュー：クリックされる前 */
-    .nav {
-     display: flex;
-     position: fixed;
-     flex-direction: column;
-     text-align: center;
-     top: 0;
-     left: 0;
-     right: 0;
-     bottom: 0;
-     opacity: 0;
-     visibility: hidden;
-     transition: opacity 0.5s, visibility 0.5s; /*ナビゲーションがクリックされて表示される速度*/
-     background-color: black; /*ナビゲーションの背景画像*/
-     z-index: 1;
-  }
+.nav {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s; /*ナビゲーションがクリックされて表示される速度*/
+    background-color: black; /*ナビゲーションの背景画像*/
+    z-index: 1;
+}
 
   .nav ul li {
     margin-bottom: -40px;
@@ -609,20 +583,20 @@ a {
     }
     .header-logo {
         width: 100%;
-      }
+    }
    
-      .nav_toggle {
-       margin-left: -20%;
-      }
+    .nav_toggle {
+        margin-left: -20%;
+    }
    
-      .text {
+    .text {
        font-size: 25px;
        right: 25%;
-      }
+    }
    
-      #news .content {
+    #news .content {
        height: 600px;
-      }
+    }
    
       #news .news-text p {
        font-size: 10px;
@@ -682,7 +656,7 @@ a {
    }
 
    .nav_toggle {
-    margin-left: -20%;
+    margin-left: -10%;
    }
 
    .text {
