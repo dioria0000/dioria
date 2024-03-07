@@ -151,7 +151,7 @@ a {
 .modal__button-wrap {
     position: absolute;
     right: 10px;
-    top: -28px;
+    top: 10px;
     display: inline-flex;
 }
   
@@ -159,7 +159,7 @@ a {
     position: relative;
     width: 39px;
     height: 39px;
-    background: orange;
+    background-color: #fff;
     border-radius: 50%;
     padding: 0;
     border: transparent;
@@ -169,7 +169,7 @@ a {
 .close-button span {
     width: 25px;
     height: 2px;
-    background: #fff;
+    background: black;
     display: inline-block;
     position: absolute;
     left: calc(50% - 12px);
@@ -445,9 +445,9 @@ a {
         background: #fff;
     }
     .text {
-        font-size: 40px;
+        font-size: 25px;
         padding: 20px 0;
-        top: 80%;
+        top: 90%;
         right: 40%;
     }
 
@@ -495,6 +495,14 @@ a {
     .sns {
         margin-top: 50px;
         text-align: center;
+    }
+
+    .buttons {
+        cursor: pointer;
+    }
+
+    .modal {
+        width: 200px;
     }
 
     /*ハンバーガーメニュー*/
@@ -573,6 +581,16 @@ a {
     visibility: visible;
   }
 
+  .modal {
+    width: 500px;
+    
+}
+
+.buttons {
+    cursor: pointer;
+}
+
+
 }
 
 /*--------スマホ表示レスポンシブ--------*/
@@ -630,89 +648,103 @@ a {
         padding: 20%;
        }
     
-       #schedule .schedule-list  {
-        padding: 7%;
-        margin-right: 3%;
-        font-size: 15px;
-       }
+#schedule .schedule-list  {
+    padding: 7%;
+    margin-right: 3%;
+    font-size: 15px;
+}
 
-       .footer-title {
-        padding-bottom: 7px;
-    }
+.footer-title {
+    padding-bottom: 7px;
+}
 
-    .sns a {
-        font-size: 20px;
-      }
-      
+.sns a {
+    font-size: 20px;
+}
+.buttons {
+    cursor: pointer;
+}
+
+.modal {
+    width: 500px;
+}
 }
 
 @media screen and (max-width: 399px) {
 
-    body {
-        overflow-x: hidden;
-    }
-   .header-logo {
-     width: 100%;
-   }
+body {
+    overflow-x: hidden;
+}
+.header-logo {
+    width: 100%;
+}
 
-   .nav_toggle {
+.nav_toggle {
     margin-left: -10%;
-   }
+}
 
-   .text {
+.text {
     font-size: 25px;
     right: 20%;
-   }
+}
 
-   #news .content {
+#news .content {
     height: 600px;
-   }
+}
 
-   #news .news-text p {
+#news .news-text p {
     font-size: 10px;
-   }
+}
    
-   #news .content1 {
+#news .content1 {
     height: 400px;
-   }
+}
 
-   #news .content .news-title {
+#news .content .news-title {
     font-size: 20px;
-   }
+}
 
-   #news .content1 .news-title {
+#news .content1 .news-title {
     font-size: 20px;
-   }
+}
 
-   #news .content1 p {
+#news .content1 p {
     padding-top: 5%;
-   }
+}
 
-   #schedule .schedule-contaniner{
+#schedule .schedule-contaniner{
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
     width: 100%;
     height: auto;
-   }
+}
 
-   .schedule-contnt {
+.schedule-contnt {
     padding: 20%;
-   }
+}
 
-   #schedule .schedule-list  {
+#schedule .schedule-list  {
     padding: 7%;
     margin-right: 3%;
     font-size: 15px;
-   }
+}
 
-   .footer-title {
+.footer-title {
     padding-bottom: 7px;
-  }
+}
 
-  .sns a {
+.sns a {
     font-size: 20px;
-  }
+}
+
+.buttons {
+    cursor: pointer;
+}
+
+.modal {
+    width: 300px;
+}
 
 
 }
