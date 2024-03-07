@@ -426,7 +426,7 @@ a {
         height: 1.5rem;
         margin-left: 60%;
         z-index: 2;
-      }
+    }
       .nav_toggle i {
         display: block;
         width: 100%; /*線の長さ*/
@@ -434,83 +434,83 @@ a {
         background-color: black;
         position: absolute;
         transition: transform 0.5s, opacity 0.5s; /*クッリクした時の三本線の変化する時間*/
-      }
+    }
 
       .nav_toggle i:nth-child(1) {
         top: 0;
-      }
+    }
       .nav_toggle i:nth-child(2) {
         top: 0;
         bottom: 0;
         margin: auto;
-      }
+    }
       .nav_toggle i:nth-child(3) {
         bottom: 0;
-      }
+    }
 
       /* クリックされた後のハンバーガーのマーク */
       .nav_toggle.show i:nth-child(1) {
         transform: translateY(10px) rotate(-45deg);
         background-color: #fff;
-      }
+    }
      .nav_toggle.show i:nth-child(2) {
         background-color: #fff;
         opacity: 0;
-     }
+    }
      .nav_toggle.show i:nth-child(3) {
         transform: translateY(-12px) rotate(45deg);
         background-color: #fff;
-     }
+    }
 
      /* クリックで表示されるメニュー：クリックされる前 */
-    .nav {
-     display: flex;
-     position: fixed;
-     flex-direction: column;
-     text-align: center;
-     top: 0;
-     left: 0;
-     right: 0;
-     bottom: 0;
-     opacity: 0;
-     visibility: hidden;
-     transition: opacity 0.5s, visibility 0.5s; /*ナビゲーションがクリックされて表示される速度*/
-     background-color: black; /*ナビゲーションの背景画像*/
-     z-index: 1;
-  }
+     .nav {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        text-align: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s, visibility 0.5s; /*ナビゲーションがクリックされて表示される速度*/
+        background-color: black; /*ナビゲーションの背景画像*/
+        z-index: 1;
+    }
 
-  .nav ul li {
-    margin-bottom: -40px;
-  }
+    .nav ul li {
+        margin-bottom: -40px;
+    }
 
-  .nav ul li a {
-    color: #fff;
-  }
+    .nav ul li a {
+        color: #fff;
+    }
 
-  /* クリックで表示されるメニュー：クリックされた後 */
-  .nav.show {
-    opacity: 1;
-    visibility: visible;
-  }
-  .buttons {
-    cursor: pointer;
-}
+    /* クリックで表示されるメニュー：クリックされた後 */
+    .nav.show {
+        opacity: 1;
+        visibility: visible;
+    }
+    .buttons {
+        cursor: pointer;
+    }
 
-.modal {
-    width: 200px;
-}
+    .modal {
+        width: 200px;
+    }
 }
 
 @media screen and (max-width: 499px){
     body {
-      overflow-x: hidden;
-  }
-  .header-logo {
-      width: 100%;
+        overflow-x: hidden;
+    }
+    .header-logo {
+        width: 100%;
     }
   
     .nav_toggle {
-     margin-left: -20%;
+        margin-left: -20%;
     }
 
     #nav-top {
@@ -562,14 +562,12 @@ a {
     
         /*-----MF-----*/
     #mf {
-       
         padding: 30px;
     }
     
         /*-----FW-----*/
     #fw {
         padding: 30px;
-    
     }
 
     .footer-title {
@@ -579,26 +577,26 @@ a {
     .sns a {
         font-size: 20px;
       }
-      .buttons {
+
+    .buttons {
         cursor: pointer;
     }
 
     .modal {
         width: 200px;
     }
+}
   
-  }
-  
-  @media screen and (max-width: 399px){
+@media screen and (max-width: 399px){
     body {
-      overflow-x: hidden;
-  }
-  .header-logo {
-      width: 100%;
+        overflow-x: hidden;
     }
-  
+    .header-logo {
+        width: 100%;
+    }
+    
     .nav_toggle {
-     margin-left: -15%;
+        margin-left: -15%;
     }
 
     #nav-top {
@@ -632,19 +630,19 @@ a {
         font-size: 15px;
         line-height: 2;
     }
-    
+        
     .content p {
         font-size: 10px;
     }
 
     /*-----GK-----*/
     #gk {
-    padding: 10px;
-   }
+        padding: 10px;
+    }
 
     /*-----DF-----*/
     #df {
-    padding: 10px;
+        padding: 10px;
     }
 
     /*-----MF-----*/
@@ -664,13 +662,14 @@ a {
 
     .sns a {
         font-size: 20px;
-      }
-      .buttons {
+    }
+
+    .buttons {
         cursor: pointer;
     }
 
     .modal {
         width: 200px;
     }
-  }
+}
   
